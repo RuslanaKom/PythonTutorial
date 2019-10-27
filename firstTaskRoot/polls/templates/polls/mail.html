@@ -1,0 +1,9 @@
+<h1>{{header }}</h1>
+
+<form action="{% url 'polls:processmail' %}" method="POST">
+{% csrf_token %}
+<h3> {{label}}<h3>
+<textarea name="yourtext" rows="10" cols="70"></textarea>
+<br>
+<input type="submit" value={{buttonText}}>
+</form>

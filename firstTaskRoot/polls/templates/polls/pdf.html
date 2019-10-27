@@ -1,0 +1,9 @@
+<h1>Create pdf</h1>
+
+<form action="{% url 'polls:createpdf' %}" method="POST">
+{% csrf_token %}
+<h3> Your text:<h3>
+<textarea name="pdftext" rows="10" cols="70"></textarea>
+<br>
+<input type="submit" value="Create PDF">
+</form>

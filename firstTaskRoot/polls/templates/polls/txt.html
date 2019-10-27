@@ -1,0 +1,9 @@
+<h1>Create txt</h1>
+
+<form action="{% url 'polls:createtxt' %}" method="POST">
+{% csrf_token %}
+<h3> Your text:<h3>
+<textarea name="plaintext" rows="10" cols="70"></textarea>
+<br>
+<input type="submit" value="Create txt">
+</form>
